@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![Magic TV Banner](public/favicon.svg)
+<a href="https://magictv.dengnis97.workers.dev/">
+  <img src="public/favicon.svg" alt="Magic TV Logo" width="72" height="72" />
+</a>
 
 ### Media Center for Android & Android TV · Kodi Nexus 20.5 Port
 
