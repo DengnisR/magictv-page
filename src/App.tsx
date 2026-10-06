@@ -11,6 +11,8 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsAndConditions } from './components/TermsAndConditions';
 import { Footer } from './components/Footer';
 import { MagicIcon } from './components/MagicLogo';
+import { AdBanner } from './components/AdBanner';
+import { CookieNotice } from './components/CookieNotice';
 import { Sparkles } from 'lucide-react';
 
 function AppContent() {
@@ -101,6 +103,9 @@ function AppContent() {
 
             <CompatibilitySection />
 
+            {/* Non-intrusive Native Ad Slot for Adsterra */}
+            <AdBanner />
+
             <FaqSection />
 
             {/* Bottom Call to Action Pre-Footer Banner - Clean Minimalism */}
@@ -155,6 +160,9 @@ function AppContent() {
       <Footer
         onNavigate={navigateTo}
       />
+
+      {/* GDPR / Advertising Cookie Notice */}
+      <CookieNotice onNavigate={navigateTo} />
 
     </div>
   );

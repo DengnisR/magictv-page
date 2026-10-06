@@ -147,6 +147,15 @@ export const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({ onNaviga
                 </ul>
               </section>
 
+              <section>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">
+                  External Advertising &amp; Third-Party Links
+                </h2>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  This website may display advertisements provided by third-party advertising partners (such as Adsterra) or contain hyperlinks to external third-party sites. The Service Provider does not review, control, endorse, or guarantee the content, products, or claims made by third-party advertisers. Accessing any external links or interacting with promotional offers is done at your own sole risk and discretion.
+                </p>
+              </section>
+
               <section className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80">
                 <h2 className="text-lg font-bold text-amber-950 mb-2 flex items-center gap-2">
                   <AlertTriangle className="w-4 h-4 text-amber-600" />
@@ -218,6 +227,15 @@ export const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({ onNaviga
                   <li>Acceder a transmisiones ilegales o no autorizadas en tu jurisdicción.</li>
                   <li>Infringir cualquier ley local o internacional de propiedad intelectual o radiodifusión.</li>
                 </ul>
+              </section>
+
+              <section>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">
+                  Publicidad Externa y Enlaces de Terceros
+                </h2>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Este sitio web puede exhibir anuncios suministrados por redes publicitarias de terceros (como Adsterra) o contener hipervínculos a plataformas externas. El Proveedor del Servicio no supervisa, avala ni asume responsabilidad civil o legal por los productos, servicios o promociones ofrecidos por anunciantes externos. La interacción con anuncios de terceros se realiza bajo tu propia discreción y riesgo.
+                </p>
               </section>
 
               <section className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80">

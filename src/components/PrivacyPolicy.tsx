@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RoutePath } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
-import { ArrowLeft, Shield, HardDrive, Server, ExternalLink, Copy, Check, Printer, Mail, Network } from 'lucide-react';
+import { ArrowLeft, Shield, HardDrive, Server, ExternalLink, Copy, Check, Printer, Mail, Network, Cookie, Megaphone } from 'lucide-react';
 
 interface PrivacyPolicyProps {
   onNavigate: (route: RoutePath) => void;
@@ -186,6 +186,46 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
                 </ul>
               </section>
 
+              <section className="p-5 rounded-2xl bg-amber-50/60 border border-amber-200/70">
+                <h2 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <Cookie className="w-5 h-5 text-amber-600" />
+                  Website Advertising, Cookies &amp; Third-Party Partners
+                </h2>
+                <p className="text-sm text-slate-700 leading-relaxed mb-3">
+                  While the <strong>Magic TV Android Application</strong> itself is completely free of telemetry, analytics, and personal data harvesting, this <strong>promotional website and landing page</strong> may partner with third-party advertising networks (including networks such as Adsterra and contextual display networks) to support hosting and infrastructure expenses.
+                </p>
+                <div className="space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p>
+                    <strong>Use of Cookies &amp; Identifiers:</strong> Third-party ad vendors and ad networks may place or read cookies, device identifiers, or web beacons when serving advertisements on this website. These technologies are used by advertising partners to deliver contextual ads, cap impression frequencies, and measure campaign performance.
+                  </p>
+                  <p>
+                    <strong>Your Privacy Choices &amp; Opt-Out:</strong> You can manage or block cookies at any time via your browser settings. To learn more about interest-based advertising or to opt out of participating ad networks, you may visit the{' '}
+                    <a
+                      href="https://optout.networkadvertising.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#00D2FF] font-semibold hover:underline inline-flex items-center gap-0.5"
+                    >
+                      Network Advertising Initiative (NAI)
+                      <ExternalLink className="w-3 h-3" />
+                    </a>{' '}
+                    or the{' '}
+                    <a
+                      href="https://optout.aboutads.info/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#00D2FF] font-semibold hover:underline inline-flex items-center gap-0.5"
+                    >
+                      Digital Advertising Alliance (DAA)
+                      <ExternalLink className="w-3 h-3" />
+                    </a>.
+                  </p>
+                  <p className="font-semibold text-slate-700 pt-1">
+                    Google Play Store Compliance Note: Third-party advertising is strictly limited to this public informational website. The Magic TV Android app installed on user devices does not bundle advertising trackers or monitor personal media libraries.
+                  </p>
+                </div>
+              </section>
+
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">
                   Children's Privacy
@@ -307,6 +347,46 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
                     </a>
                   </li>
                 </ul>
+              </section>
+
+              <section className="p-5 rounded-2xl bg-amber-50/60 border border-amber-200/70">
+                <h2 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <Cookie className="w-5 h-5 text-amber-600" />
+                  Publicidad en el Sitio Web, Cookies y Redes de Terceros
+                </h2>
+                <p className="text-sm text-slate-700 leading-relaxed mb-3">
+                  Mientras que la <strong>Aplicación Magic TV para Android</strong> está 100% libre de telemetría, analítica comercial y recopilación de datos privados, este <strong>sitio web informativo y landing page</strong> puede colaborar con redes de publicidad externas (como Adsterra y proveedores de banners display contextuados) para sustentar los costes de mantenimiento y alojamiento en la nube.
+                </p>
+                <div className="space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p>
+                    <strong>Uso de Cookies e Identificadores Técnicos:</strong> Los proveedores y redes publicitarias pueden utilizar cookies, balizas web (web beacons) o identificadores de navegador al mostrar anuncios en este sitio. Dichos mecanismos se emplean exclusivamente para mostrar anuncios contextuales no invasivos, evitar la repetición excesiva del mismo anuncio y medir la eficacia técnica de las campañas.
+                  </p>
+                  <p>
+                    <strong>Tus Opciones de Control y Desactivación:</strong> Puedes configurar tu navegador para bloquear o eliminar las cookies en cualquier momento. Asimismo, puedes gestionar tus preferencias sobre redes publicitarias participantes a través de las iniciativas{' '}
+                    <a
+                      href="https://optout.networkadvertising.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#00D2FF] font-semibold hover:underline inline-flex items-center gap-0.5"
+                    >
+                      Network Advertising Initiative (NAI)
+                      <ExternalLink className="w-3 h-3" />
+                    </a>{' '}
+                    o{' '}
+                    <a
+                      href="https://optout.aboutads.info/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#00D2FF] font-semibold hover:underline inline-flex items-center gap-0.5"
+                    >
+                      Digital Advertising Alliance (DAA)
+                      <ExternalLink className="w-3 h-3" />
+                    </a>.
+                  </p>
+                  <p className="font-semibold text-slate-700 pt-1">
+                    Aviso de Conformidad con Google Play Store: La publicidad de terceros mostrada se encuentra confinada con carácter estricto a este sitio web informativo. La aplicación Android Magic TV instalada en dispositivos no incluye librerías de publicidad engañosa ni rastrea los archivos multimedia personales del usuario.
+                  </p>
+                </div>
               </section>
 
               <section>
