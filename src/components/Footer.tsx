@@ -84,11 +84,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <LanguageSelector variant="footer" />
 
             <a
-              href="https://github.com"
+              href="https://github.com/DengnisR/magictv-page"
               target="_blank"
               rel="noreferrer"
-              className="w-8 h-8 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-800 hover:border-slate-300 transition-all shadow-2xs"
-              title="GitHub Repository"
+              className="w-8 h-8 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-slate-800 hover:border-slate-300 transition-all shadow-2xs cursor-pointer"
+              title="GitHub - DengnisR/magictv-page"
             >
               <Github className="w-4 h-4" />
             </a>
