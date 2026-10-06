@@ -3,6 +3,7 @@ import { RoutePath } from '../types';
 import { GOOGLE_PLAY_URL } from '../config';
 import { useLanguage } from '../context/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
+import { MagicIcon } from './MagicLogo';
 import { Github } from 'lucide-react';
 
 interface FooterProps {
@@ -22,9 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Brand and Copyright */}
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#00D2FF] to-[#9D4EDD] flex items-center justify-center shadow-sm">
-                <span className="text-white font-extrabold text-sm">M</span>
-              </div>
+              <MagicIcon size={32} className="shadow-sm" />
               <span className="text-base font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#00D2FF] to-[#9D4EDD]">
                 Magic TV
               </span>

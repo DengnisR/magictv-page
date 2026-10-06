@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GOOGLE_PLAY_URL } from '../config';
 import { useLanguage } from '../context/LanguageContext';
+import { MagicIcon } from './MagicLogo';
 import { Play, Tv, Sparkles, Film, Radio, Layers, Settings, ShieldCheck, CheckCircle2, ChevronRight, Volume2, Cpu, Check, Network, Puzzle, ArrowRight } from 'lucide-react';
 
 interface HeroProps {
@@ -144,7 +145,10 @@ export const Hero: React.FC<HeroProps> = ({ onNavigateToFeatures }) => {
                     <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
                     <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
                     <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
-                    <span className="ml-2 font-mono text-[11px] text-slate-400 font-bold">{t.hero.mockupCenter}</span>
+                    <div className="flex items-center gap-1.5 ml-1">
+                      <MagicIcon size={16} />
+                      <span className="font-mono text-[11px] text-slate-300 font-bold">{t.hero.mockupCenter}</span>
+                    </div>
                   </div>
 
                   {/* Clean tabs */}

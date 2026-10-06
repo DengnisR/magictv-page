@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { RoutePath } from '../types';
 import { GOOGLE_PLAY_URL } from '../config';
 import { useLanguage } from '../context/LanguageContext';
+import { MagicIcon } from './MagicLogo';
 import { Tv, Shield, FileText, Menu, X, Sparkles, HelpCircle, Smartphone } from 'lucide-react';
 
 interface NavbarProps {
@@ -45,9 +46,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate }) => {
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 text-left group transition-transform focus:outline-none cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00D2FF] to-[#9D4EDD] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-              <span className="text-white font-extrabold text-xl tracking-tighter">M</span>
-            </div>
+            <MagicIcon
+              size={40}
+              showGlow
+              className="shadow-md group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#00D2FF] to-[#9D4EDD]">

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Brand Gradient: Cyan to Purple -->
+    <linearGradient id="magicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="50%" stop-color="#4361EE" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+
+    <!-- Subtle Top Sheen Highlight -->
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Inner Glow for M -->
+    <filter id="mShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.28" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Squircle Background -->
+  <rect width="512" height="512" rx="118" ry="118" fill="url(#magicBg)" />
+
+  <!-- Gloss Sheen Overlay -->
+  <path d="M 0 118 C 0 52.8 52.8 0 118 0 L 394 0 C 459.2 0 512 52.8 512 118 L 512 210 L 0 256 Z" fill="url(#sheen)" opacity="0.7" />
+
+  <!-- Border Highlight for Modern Polish -->
+  <rect x="2" y="2" width="508" height="508" rx="116" ry="116" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" />
+
+  <!-- Stylized Geometric "M" Monogram -->
+  <path
+    d="M 120 376
+       L 120 148
+       C 120 138 128 130 138 130
+       L 168 130
+       C 178 130 186 135 192 144
+       L 256 248
+       L 320 144
+       C 326 135 334 130 344 130
+       L 374 130
+       C 384 130 392 138 392 148
+       L 392 376
+       C 392 384 384 390 376 390
+       L 342 390
+       C 334 390 326 384 326 376
+       L 326 242
+       L 272 328
+       C 264 340 248 340 240 328
+       L 186 242
+       L 186 376
+       C 186 384 178 390 170 390
+       L 136 390
+       C 128 390 120 384 120 376 Z"
+    fill="#FFFFFF"
+    filter="url(#mShadow)"
+  />
+</svg>

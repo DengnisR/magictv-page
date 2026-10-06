@@ -10,6 +10,7 @@ import { FaqSection } from './components/FaqSection';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { TermsAndConditions } from './components/TermsAndConditions';
 import { Footer } from './components/Footer';
+import { MagicIcon } from './components/MagicLogo';
 import { Sparkles } from 'lucide-react';
 
 function AppContent() {
@@ -111,10 +112,13 @@ function AppContent() {
 
                 <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
                   <div className="max-w-2xl">
-                    <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-blue-500/10 text-[#00D2FF] text-xs font-extrabold uppercase tracking-widest mb-4 border border-[#00D2FF]/20">
-                      <Sparkles className="w-3.5 h-3.5 text-[#00D2FF]" />
-                      {t.preFooter.badge}
-                    </span>
+                    <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                      <MagicIcon size={44} showGlow className="shadow-lg" />
+                      <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-blue-500/10 text-[#00D2FF] text-xs font-extrabold uppercase tracking-widest border border-[#00D2FF]/20">
+                        <Sparkles className="w-3.5 h-3.5 text-[#00D2FF]" />
+                        {t.preFooter.badge}
+                      </span>
+                    </div>
                     <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-white tracking-tight leading-tight">
                       {t.preFooter.title}
                     </h2>
