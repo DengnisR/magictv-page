@@ -1,0 +1,6 @@
+{
+  "name": "Magic TV",
+  "description": "Landing page oficial para la aplicación Magic TV (port de Kodi Nexus 20.5 para Android) con rutas de políticas de privacidad y términos y condiciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

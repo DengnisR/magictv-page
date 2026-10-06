@@ -1,0 +1,10 @@
+name = "magictv"
+compatibility_date = "2024-11-01"
+
+# Configuración explícita para evitar advertencias de Wrangler
+workers_dev = true
+preview_urls = true
+
+# Directorio de salida estático generado por Vite
+[assets]
+directory = "./dist"

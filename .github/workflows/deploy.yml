@@ -1,0 +1,51 @@
+name: Test Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-build:
+    name: Build & Deploy Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Type check (Lint)
+        run: npm run lint
+
+      - name: Test build static site
+        run: npm run build
+
+      - name: Verify build artifacts for Cloudflare Pages
+        run: |
+          if [ -d "dist" ] && [ -f "dist/index.html" ]; then
+            echo "✅ Build test passed! The 'dist' directory is valid and ready for Cloudflare Pages."
+            ls -la dist
+          else
+            echo "❌ Build test failed: dist/index.html not found!"
+            exit 1
+          fi
